@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nadav's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* YOUR CSS GOES HERE */
+        body{
+            font-family: Arial, sans-serif;
+            color: red;
+        }
+
+        #main-header{
+            background-color: lightcyan;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1{
+            font-size: 32px;
+        }
+
+        h2{
+            color: blueviolet;
+        }
+
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+
+        .card{
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        a{
+            color: green;
+        }
+
+        footer{
+            background-color: beige;
+        }
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Nadav's Portfolio</h1>
+    <header id="main-header">
+        <h1>Nadav Sundy</h1>
+        <p>Student ID: 2698600</p>
+    </header>
+
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am a 3rd year Computer Science student at the University of Witwatersrand. I have an interest in Cyber Security, problem solving and software development.
-      </p>
-	<p>
-	I am also intresed in community work, and have had many leadership role's within youth organizations.
-     </p>
-    </section>
+    <main>
+        <section class="card" id="about">
+            <h2>About Me</h2>
+            <p>Write a short paragraph about yourself here. Include your interests, your field of study, and what you hope to achieve in this course.</p>
+        </section>
 
-    <article>
-      <h3>Latest Project</h3>
-      <p>
-        Bnei Akiva Website Redesign. Redesigned the website for Bnei Akiva South Africa to update the look into a more modern style and incorporate their event booking system into one site. 
-      </p>
-    </article>
-  </main>
+        <article class="card" id="projects">
+            <h2>Latest Project</h2>
+            <p>Describe a project you have worked on or are currently working on. This could be a personal project, a group assignment, or something you built for fun.</p>
+        </article>
+    </main>
 
-  <footer>
-    © 2026 2698600 | Built with Semantic HTML
-  </footer>
+    <footer>
+        <p>&copy; 2025 Nadav Sundy. All rights reserved.</p>
+    </footer>
 </body>
 </html>
